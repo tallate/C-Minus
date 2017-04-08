@@ -1,0 +1,282 @@
+Symbols: 
+$ terminal
+Z nonterminal
+E nonterminal
+T nonterminal
+F nonterminal
+w0 terminal
+w1 terminal
+i terminal
+( terminal
+) terminal
+FirstSets: 
+$ terminal $ terminal 
+Z nonterminal 
+E nonterminal i terminal ( terminal 
+T nonterminal i terminal ( terminal 
+F nonterminal i terminal ( terminal 
+w0 terminal w0 terminal 
+w1 terminal w1 terminal 
+i terminal i terminal 
+( terminal ( terminal 
+) terminal ) terminal 
+Products: 
+Z nonterminal -> E nonterminal 
+E nonterminal -> E nonterminal w0 terminal T nonterminal 
+E nonterminal -> T nonterminal 
+T nonterminal -> T nonterminal w1 terminal F nonterminal 
+T nonterminal -> F nonterminal 
+F nonterminal -> i terminal 
+F nonterminal -> ( terminal E nonterminal ) terminal 
+States: 
+State0
+[Z nonterminal -> .E nonterminal , $ terminal]
+[E nonterminal -> .E nonterminal w0 terminal T nonterminal , $ terminal]
+[E nonterminal -> .T nonterminal , $ terminal]
+[E nonterminal -> .E nonterminal w0 terminal T nonterminal , w0 terminal]
+[E nonterminal -> .T nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , $ terminal]
+[T nonterminal -> .F nonterminal , $ terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w0 terminal]
+[T nonterminal -> .F nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w1 terminal]
+[T nonterminal -> .F nonterminal , w1 terminal]
+[F nonterminal -> .i terminal , $ terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , $ terminal]
+[F nonterminal -> .i terminal , w0 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w0 terminal]
+[F nonterminal -> .i terminal , w1 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w1 terminal]
+State1
+[Z nonterminal -> E nonterminal ., $ terminal]
+[E nonterminal -> E nonterminal .w0 terminal T nonterminal , $ terminal]
+[E nonterminal -> E nonterminal .w0 terminal T nonterminal , w0 terminal]
+State2
+[E nonterminal -> E nonterminal w0 terminal .T nonterminal , $ terminal]
+[E nonterminal -> E nonterminal w0 terminal .T nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , $ terminal]
+[T nonterminal -> .F nonterminal , $ terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w0 terminal]
+[T nonterminal -> .F nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w1 terminal]
+[T nonterminal -> .F nonterminal , w1 terminal]
+[F nonterminal -> .i terminal , $ terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , $ terminal]
+[F nonterminal -> .i terminal , w0 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w0 terminal]
+[F nonterminal -> .i terminal , w1 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w1 terminal]
+State3
+[E nonterminal -> E nonterminal w0 terminal T nonterminal ., $ terminal]
+[E nonterminal -> E nonterminal w0 terminal T nonterminal ., w0 terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , $ terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , w0 terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , w1 terminal]
+State4
+[T nonterminal -> T nonterminal w1 terminal .F nonterminal , $ terminal]
+[T nonterminal -> T nonterminal w1 terminal .F nonterminal , w0 terminal]
+[T nonterminal -> T nonterminal w1 terminal .F nonterminal , w1 terminal]
+[F nonterminal -> .i terminal , $ terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , $ terminal]
+[F nonterminal -> .i terminal , w0 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w0 terminal]
+[F nonterminal -> .i terminal , w1 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w1 terminal]
+State5
+[T nonterminal -> T nonterminal w1 terminal F nonterminal ., $ terminal]
+[T nonterminal -> T nonterminal w1 terminal F nonterminal ., w0 terminal]
+[T nonterminal -> T nonterminal w1 terminal F nonterminal ., w1 terminal]
+State6
+[F nonterminal -> i terminal ., $ terminal]
+[F nonterminal -> i terminal ., w0 terminal]
+[F nonterminal -> i terminal ., w1 terminal]
+State7
+[F nonterminal -> ( terminal .E nonterminal ) terminal , $ terminal]
+[F nonterminal -> ( terminal .E nonterminal ) terminal , w0 terminal]
+[F nonterminal -> ( terminal .E nonterminal ) terminal , w1 terminal]
+[E nonterminal -> .E nonterminal w0 terminal T nonterminal , ) terminal]
+[E nonterminal -> .T nonterminal , ) terminal]
+[E nonterminal -> .E nonterminal w0 terminal T nonterminal , w0 terminal]
+[E nonterminal -> .T nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , ) terminal]
+[T nonterminal -> .F nonterminal , ) terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w0 terminal]
+[T nonterminal -> .F nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w1 terminal]
+[T nonterminal -> .F nonterminal , w1 terminal]
+[F nonterminal -> .i terminal , ) terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , ) terminal]
+[F nonterminal -> .i terminal , w0 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w0 terminal]
+[F nonterminal -> .i terminal , w1 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w1 terminal]
+State8
+[F nonterminal -> ( terminal E nonterminal .) terminal , $ terminal]
+[F nonterminal -> ( terminal E nonterminal .) terminal , w0 terminal]
+[F nonterminal -> ( terminal E nonterminal .) terminal , w1 terminal]
+[E nonterminal -> E nonterminal .w0 terminal T nonterminal , ) terminal]
+[E nonterminal -> E nonterminal .w0 terminal T nonterminal , w0 terminal]
+State9
+[E nonterminal -> E nonterminal w0 terminal .T nonterminal , ) terminal]
+[E nonterminal -> E nonterminal w0 terminal .T nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , ) terminal]
+[T nonterminal -> .F nonterminal , ) terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w0 terminal]
+[T nonterminal -> .F nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w1 terminal]
+[T nonterminal -> .F nonterminal , w1 terminal]
+[F nonterminal -> .i terminal , ) terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , ) terminal]
+[F nonterminal -> .i terminal , w0 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w0 terminal]
+[F nonterminal -> .i terminal , w1 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w1 terminal]
+State10
+[E nonterminal -> E nonterminal w0 terminal T nonterminal ., ) terminal]
+[E nonterminal -> E nonterminal w0 terminal T nonterminal ., w0 terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , ) terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , w0 terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , w1 terminal]
+State11
+[T nonterminal -> T nonterminal w1 terminal .F nonterminal , ) terminal]
+[T nonterminal -> T nonterminal w1 terminal .F nonterminal , w0 terminal]
+[T nonterminal -> T nonterminal w1 terminal .F nonterminal , w1 terminal]
+[F nonterminal -> .i terminal , ) terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , ) terminal]
+[F nonterminal -> .i terminal , w0 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w0 terminal]
+[F nonterminal -> .i terminal , w1 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w1 terminal]
+State12
+[T nonterminal -> T nonterminal w1 terminal F nonterminal ., ) terminal]
+[T nonterminal -> T nonterminal w1 terminal F nonterminal ., w0 terminal]
+[T nonterminal -> T nonterminal w1 terminal F nonterminal ., w1 terminal]
+State13
+[F nonterminal -> i terminal ., ) terminal]
+[F nonterminal -> i terminal ., w0 terminal]
+[F nonterminal -> i terminal ., w1 terminal]
+State14
+[F nonterminal -> ( terminal .E nonterminal ) terminal , ) terminal]
+[F nonterminal -> ( terminal .E nonterminal ) terminal , w0 terminal]
+[F nonterminal -> ( terminal .E nonterminal ) terminal , w1 terminal]
+[E nonterminal -> .E nonterminal w0 terminal T nonterminal , ) terminal]
+[E nonterminal -> .T nonterminal , ) terminal]
+[E nonterminal -> .E nonterminal w0 terminal T nonterminal , w0 terminal]
+[E nonterminal -> .T nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , ) terminal]
+[T nonterminal -> .F nonterminal , ) terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w0 terminal]
+[T nonterminal -> .F nonterminal , w0 terminal]
+[T nonterminal -> .T nonterminal w1 terminal F nonterminal , w1 terminal]
+[T nonterminal -> .F nonterminal , w1 terminal]
+[F nonterminal -> .i terminal , ) terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , ) terminal]
+[F nonterminal -> .i terminal , w0 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w0 terminal]
+[F nonterminal -> .i terminal , w1 terminal]
+[F nonterminal -> .( terminal E nonterminal ) terminal , w1 terminal]
+State15
+[F nonterminal -> ( terminal E nonterminal .) terminal , ) terminal]
+[F nonterminal -> ( terminal E nonterminal .) terminal , w0 terminal]
+[F nonterminal -> ( terminal E nonterminal .) terminal , w1 terminal]
+[E nonterminal -> E nonterminal .w0 terminal T nonterminal , ) terminal]
+[E nonterminal -> E nonterminal .w0 terminal T nonterminal , w0 terminal]
+State16
+[F nonterminal -> ( terminal E nonterminal ) terminal ., ) terminal]
+[F nonterminal -> ( terminal E nonterminal ) terminal ., w0 terminal]
+[F nonterminal -> ( terminal E nonterminal ) terminal ., w1 terminal]
+State17
+[E nonterminal -> T nonterminal ., ) terminal]
+[E nonterminal -> T nonterminal ., w0 terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , ) terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , w0 terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , w1 terminal]
+State18
+[T nonterminal -> F nonterminal ., ) terminal]
+[T nonterminal -> F nonterminal ., w0 terminal]
+[T nonterminal -> F nonterminal ., w1 terminal]
+State19
+[F nonterminal -> ( terminal E nonterminal ) terminal ., $ terminal]
+[F nonterminal -> ( terminal E nonterminal ) terminal ., w0 terminal]
+[F nonterminal -> ( terminal E nonterminal ) terminal ., w1 terminal]
+State20
+[T nonterminal -> F nonterminal ., $ terminal]
+[T nonterminal -> F nonterminal ., w0 terminal]
+[T nonterminal -> F nonterminal ., w1 terminal]
+State21
+[E nonterminal -> T nonterminal ., $ terminal]
+[E nonterminal -> T nonterminal ., w0 terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , $ terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , w0 terminal]
+[T nonterminal -> T nonterminal .w1 terminal F nonterminal , w1 terminal]
+shift    $   w0   w1    i    (    )
+    0,    0,    0,    6,    7,    0,
+    0,    2,    0,    0,    0,    0,
+    0,    0,    0,    6,    7,    0,
+    0,    0,    4,    0,    0,    0,
+    0,    0,    0,    6,    7,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,   13,   14,    0,
+    0,    9,    0,    0,    0,   19,
+    0,    0,    0,   13,   14,    0,
+    0,    0,   11,    0,    0,    0,
+    0,    0,    0,   13,   14,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,   13,   14,    0,
+    0,    9,    0,    0,    0,   16,
+    0,    0,    0,    0,    0,    0,
+    0,    0,   11,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    4,    0,    0,    0,
+reduc    $   w0   w1    i    (    )
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    1,    1,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    3,    3,    3,    0,    0,    0,
+    5,    5,    5,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    1,    0,    0,    0,    1,
+    0,    0,    0,    0,    0,    0,
+    0,    3,    3,    0,    0,    3,
+    0,    5,    5,    0,    0,    5,
+    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,
+    0,    6,    6,    0,    0,    6,
+    0,    2,    0,    0,    0,    2,
+    0,    4,    4,    0,    0,    4,
+    6,    6,    6,    0,    0,    0,
+    4,    4,    4,    0,    0,    0,
+    2,    2,    0,    0,    0,    0,
+gotos    Z    E    T    F
+    0,    1,   21,   20,
+    0,    0,    0,    0,
+    0,    0,    3,   20,
+    0,    0,    0,    0,
+    0,    0,    0,    5,
+    0,    0,    0,    0,
+    0,    0,    0,    0,
+    0,    8,   17,   18,
+    0,    0,    0,    0,
+    0,    0,   10,   18,
+    0,    0,    0,    0,
+    0,    0,    0,   12,
+    0,    0,    0,    0,
+    0,    0,    0,    0,
+    0,   15,   17,   18,
+    0,    0,    0,    0,
+    0,    0,    0,    0,
+    0,    0,    0,    0,
+    0,    0,    0,    0,
+    0,    0,    0,    0,
+    0,    0,    0,    0,
+    0,    0,    0,    0,
+
+————done————

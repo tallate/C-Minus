@@ -1,0 +1,11 @@
+E T F
+w0 w1 i ( )
+E i (
+T i (
+F i (
+E -> E w0 T
+E -> T
+T -> T w1 F
+T -> F
+F -> i
+F -> ( E )
